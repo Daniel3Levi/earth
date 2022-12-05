@@ -8,7 +8,7 @@ import EarthCloudsMap from '../../assets/texteures/8k_earth_clouds.jpg';
 
 import { useFrame, useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three';
-import { OrbitControls, Stars } from '@react-three/drei';
+import { Stars } from '@react-three/drei';
 import * as THREE from 'three';
 
 export function Earth(props) {

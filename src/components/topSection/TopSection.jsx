@@ -12,12 +12,14 @@ export default function TopSection() {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20%;
+    z-index: 99;
   `;
 
   const Logo = styled.img`
     margin: 0;
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     background-image: url(${logo});
   `;
 
@@ -25,7 +27,7 @@ export default function TopSection() {
     margin: 0;
     color: white;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 55px;
     margin-top: 10px;
   `;
 
