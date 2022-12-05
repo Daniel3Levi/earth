@@ -32,11 +32,12 @@ export function Earth(props) {
     <>
       {/*Light all the canvas | intensity kind of like opacity*/}
       {/* <ambientLight intensity={1} /> */}
-
+      {/**[2,0,2/5] */}
       <pointLight color="#faf9ef" position={[2, 0, 5]} intensity={1.2} />
 
       <Stars />
       {/*mesh for earth clouds*/}
+      {/*position={[0, 0, 3]}*/}
       <mesh ref={cloudsRef} position={[0, 0, 3]}>
         <sphereGeometry args={[1.005, 32, 32]} />
         <meshPhongMaterial
@@ -47,6 +48,7 @@ export function Earth(props) {
           side={THREE.DoubleSide} //render both sides
         />
       </mesh>
+      {/*position={[0, 0, 3]}*/}
       <mesh ref={earthRef} position={[0, 0, 3]}>
         <sphereGeometry args={[1, 32, 32]} />
         <meshPhongMaterial specularMap={specularMap} />
